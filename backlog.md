@@ -1,0 +1,16 @@
+- [] create initial markup
+- [] add styles
+  - [x] fonts
+  - [] colors
+  - [x] hero
+  - [] advocacia
+  - [] atuacao
+  - [] publicacoes
+  - [] contato
+  - [] footer
+- [] create carrousel
+- [] url for the sections
+- [] check mobile
+- [] check dark mode
+- [] animations
+- [] deploy

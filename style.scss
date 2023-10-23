@@ -15,13 +15,15 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
+  // font-weight: 500;
+  // color: #646cff;
+  color: white;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
+
+// a:hover {
+//   color: #535bf2;
+// }
 
 body {
   margin: 0;
@@ -36,24 +38,16 @@ h1 {
   line-height: 1.1;
 }
 
+section h2 {
+  font-family: "Inria Sans", sans-serif;
+  display: inline-block;
+  border-bottom: 5px black solid;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  /* text-align: center; */
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
 }
 
 .card {
@@ -83,15 +77,51 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  nav {
+    margin: 6rem 0;
+
+    a {
+      margin-right: 1rem;
+      font-size: 1.1rem;
+      font-family: "Inria Sans", sans-serif;
+    }
+
+    a:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.logo {
+  h1 {
+    margin: 0;
+    line-height: 0.8;
+    font-size: 7rem;
+  }
+  h2 {
+    margin: 1rem 0;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: black;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
+  a {
+    color: black;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+  // a:hover {
+  //   color: #747bff;
+  // }
+  // button {
+  //   background-color: #f9f9f9;
+  // }
 }
