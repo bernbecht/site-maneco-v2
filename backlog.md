@@ -3,7 +3,7 @@
   - [x] fonts
   - [] colors
   - [x] hero
-  - [] advocacia
+  - [x] about
   - [] atuacao
   - [] publicacoes
   - [] contato
