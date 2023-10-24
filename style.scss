@@ -211,9 +211,10 @@ button:focus-visible {
 }
 
 #articles {
+  --vertical-padding: 3.5rem;
   background: #f4f4f4;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: var(--vertical-padding);
+  padding-bottom: var(--vertical-padding);
 
   li {
     border-bottom: 1px solid black;
@@ -228,5 +229,9 @@ button:focus-visible {
   h3 {
     margin-top: 0;
     margin-bottom: 0.25rem;
+  }
+
+  h2 {
+    margin-top: 0;
   }
 }
