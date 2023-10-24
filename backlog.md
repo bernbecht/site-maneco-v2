@@ -4,11 +4,14 @@
   - [] colors
   - [x] hero
   - [x] about
-  - [] atuacao
-  - [] publicacoes
+  - [x] atuacao
+  - [x] publicacoes
   - [] contato
   - [] footer
+- [] add nav links
+- [x] add publication links
 - [] create carrousel
+- [] see more btn for articles
 - [] url for the sections
 - [] check mobile
 - [] check dark mode

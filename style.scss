@@ -25,6 +25,15 @@ a {
 //   color: #535bf2;
 // }
 
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -36,6 +45,11 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+section,
+footer {
+  padding: 0 2rem;
 }
 
 section h2 {
@@ -56,7 +70,7 @@ section:not(#hero) {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .read-the-docs {
@@ -123,8 +137,24 @@ button:focus-visible {
   flex-flow: row wrap;
 }
 
+.col {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
 .space-around {
   justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
 }
 
 .flex-1 {
@@ -157,7 +187,7 @@ button:focus-visible {
 }
 
 @media (max-width: 800px) {
-  .flex-container {
+  .flex-container:not(.keep-direction) {
     flex-direction: column;
     align-items: center;
   }
@@ -171,11 +201,36 @@ button:focus-visible {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .card {
   padding: 2em;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
+}
+
+#articles {
+  background: #f4f4f4;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  li {
+    border-bottom: 1px solid black;
+    padding: 1.5rem 0;
+  }
+
+  ul {
+    max-height: 355px;
+    overflow-y: scroll;
+  }
+
+  button {
+    background: transparent;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
 }
