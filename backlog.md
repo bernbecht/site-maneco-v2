@@ -6,14 +6,17 @@
   - [x] about
   - [x] atuacao
   - [x] publicacoes
-  - [] contato
+  - [x] contato
   - [] footer
+- [x] add correct address
+- [] add google maps images
 - [] add nav links
 - [x] add publication links
-- [] create carrousel
-- [] see more btn for articles
-- [] url for the sections
 - [] check mobile
+- [] create carrousel
+- [] url for the sections
+- [] see more btn for articles
 - [] check dark mode
+- [] optimize images
 - [] animations
 - [] deploy

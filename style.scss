@@ -73,10 +73,6 @@ section:not(#hero) {
   padding: 2rem 0;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -234,4 +230,8 @@ button:focus-visible {
   h2 {
     margin-top: 0;
   }
+}
+
+.font-secondary {
+  font-family: "Inria Sans", sans-serif;
 }
