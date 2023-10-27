@@ -1,4 +1,4 @@
-- [] create initial markup
+- [x] create initial markup
 - [] add styles
   - [x] fonts
   - [] colors
@@ -7,9 +7,8 @@
   - [x] atuacao
   - [x] publicacoes
   - [x] contato
-  - [] footer
+  - [x] footer
 - [x] add correct address
-- [] add google maps images
 - [] add nav links
 - [x] add publication links
 - [] check mobile
