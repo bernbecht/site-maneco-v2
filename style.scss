@@ -70,7 +70,7 @@ section:not(#hero) {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 button {
@@ -92,6 +92,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+nav {
+  a {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    font-family: "Inria Sans", sans-serif;
+  }
+
+  a:hover {
+    opacity: 0.75;
+  }
+}
+
 #hero {
   display: flex;
   flex-direction: column;
@@ -99,30 +111,27 @@ button:focus-visible {
   // margin-bottom: 0;
   nav {
     margin: 6rem 0;
-
-    a {
-      margin-right: 1rem;
-      font-size: 1.1rem;
-      font-family: "Inria Sans", sans-serif;
-    }
-
-    a:hover {
-      opacity: 0.75;
-    }
   }
 }
 
 .logo {
-  h1 {
-    margin: 0;
-    line-height: 0.8;
-    font-size: 7rem;
-  }
-  h2 {
-    margin: 1rem 0;
-    color: rgba(0, 0, 0, 0.5);
-    border: none;
-  }
+  margin: 0;
+  line-height: 0.8;
+}
+
+.font-size--hero {
+  font-size: 7rem;
+}
+
+.logo--footer {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.logo-subtitle {
+  margin: 1rem 0;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
 }
 
 .flex-container {
@@ -147,6 +156,10 @@ button:focus-visible {
 
 .align-center {
   align-items: center;
+}
+
+.align-start {
+  align-items: start;
 }
 
 .flex-center {
@@ -208,7 +221,7 @@ button:focus-visible {
 
 #articles {
   --vertical-padding: 3.5rem;
-  background: #f4f4f4;
+  // background: #f4f4f4;
   padding-top: var(--vertical-padding);
   padding-bottom: var(--vertical-padding);
 
@@ -234,4 +247,15 @@ button:focus-visible {
 
 .font-secondary {
   font-family: "Inria Sans", sans-serif;
+}
+
+footer {
+  background: #f4f4f4;
+  margin-top: 9rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.margin-top--none {
+  margin-top: 0;
 }
