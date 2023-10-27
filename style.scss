@@ -64,7 +64,7 @@ p {
 }
 
 section:not(#hero) {
-  margin-bottom: 60px;
+  margin-bottom: 7rem;
 }
 
 #app {
@@ -222,8 +222,6 @@ nav {
 #articles {
   --vertical-padding: 3.5rem;
   // background: #f4f4f4;
-  padding-top: var(--vertical-padding);
-  padding-bottom: var(--vertical-padding);
 
   li {
     border-bottom: 1px solid black;
@@ -251,11 +249,47 @@ nav {
 
 footer {
   background: #f4f4f4;
-  margin-top: 9rem;
+  margin-top: 7rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 .margin-top--none {
   margin-top: 0;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.btn {
+  background-color: white;
+
+  position: absolute;
+  top: 45%;
+
+  &.btn-next {
+    right: 2%;
+  }
+  &.btn-prev {
+    left: 2%;
+  }
 }
