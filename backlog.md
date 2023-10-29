@@ -18,5 +18,5 @@
 - [] check dark mode
 - [] optimize images
 - [] animations
-- [] add fav icon
+- [x] add favicon
 - [] deploy
