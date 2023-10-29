@@ -198,6 +198,11 @@ nav {
   //   background-color: #f9f9f9;
   // }
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
 
 @media (max-width: 800px) {
   .flex-container:not(.keep-direction) {
@@ -209,12 +214,9 @@ nav {
       margin-right: 0;
     }
   }
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
