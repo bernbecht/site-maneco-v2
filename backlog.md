@@ -10,12 +10,13 @@
 - [x] add correct address
 - [x] add publication links
 - [x] create carrousel
+- [x] add nav links
+- [x] check mobile
 - [] add books to articles section
-- [] add nav links
-- [] check mobile
 - [] url for the sections
 - [] see more btn for articles
 - [] check dark mode
 - [] optimize images
 - [] animations
+- [] add fav icon
 - [] deploy
