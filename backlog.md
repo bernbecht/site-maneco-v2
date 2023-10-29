@@ -1,7 +1,6 @@
 - [x] create initial markup
-- [] add styles
+- [x] add styles
   - [x] fonts
-  - [] colors
   - [x] hero
   - [x] about
   - [x] atuacao
@@ -9,10 +8,11 @@
   - [x] contato
   - [x] footer
 - [x] add correct address
-- [] add nav links
 - [x] add publication links
+- [x] create carrousel
+- [] add books to articles section
+- [] add nav links
 - [] check mobile
-- [] create carrousel
 - [] url for the sections
 - [] see more btn for articles
 - [] check dark mode
