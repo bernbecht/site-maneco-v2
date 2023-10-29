@@ -264,19 +264,20 @@ footer {
   height: 350px;
   position: relative;
   overflow: hidden;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
-
 .slide {
   width: 100%;
   max-width: 800px;
   height: 350px;
   position: absolute;
   transition: all 0.5s;
-
   & img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 4px;
   }
 }
 
