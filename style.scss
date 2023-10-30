@@ -217,6 +217,17 @@ nav {
   .grid {
     grid-template-columns: 1fr;
   }
+  .font-size--hero {
+    font-size: 4.5rem;
+  }
+  nav {
+    a {
+      margin-right: 0.2rem;
+    }
+    p {
+      text-align: center;
+    }
+  }
 }
 
 .card {
