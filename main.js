@@ -1,4 +1,4 @@
 import "./style.scss";
-import "./layout.scss";
+import "./assets/layout.scss";
 
-import "./slider.js";
+import "./assets/slider.js";
