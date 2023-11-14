@@ -56,24 +56,8 @@ footer {
   padding: 0 2rem;
 }
 
-section h2 {
-  font-family: "Inria Sans", sans-serif;
-  display: inline-block;
-  border-bottom: 5px black solid;
-  margin-bottom: 2.5rem;
-}
-
 p {
   margin: 0 0 1rem 0;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
 }
 
 button {
@@ -108,39 +92,7 @@ nav {
   }
 }
 
-#hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  nav {
-    margin: 6rem 0 3.5rem 0;
-  }
-}
-
-.logo {
-  margin: 0;
-  line-height: 0.8;
-}
-
-.font-size--hero {
-  font-size: 7rem;
-}
-
-.logo--footer {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.logo-subtitle {
-  margin: 1rem 0;
-  color: rgba(0, 0, 0, 0.5);
-  border: none;
-}
-
-.flex-container {
-  display: flex;
-}
-
+// Display classes
 .row {
   flex-flow: row wrap;
 }
@@ -173,21 +125,93 @@ nav {
   flex: 1;
 }
 
-// @media (prefers-color-scheme: light) {
-//   :root {
-//     color: black;
-//     background-color: #ffffff;
-//   }
-//   a {
-//     color: black;
-//   }
-//   // a:hover {
-//   //   color: #747bff;
-//   // }
-//   // button {
-//   //   background-color: #f9f9f9;
-//   // }
-// }
+.gap--2 {
+  gap: 2.5rem;
+}
+
+.gap--4 {
+  gap: 4.5rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+// box size classes
+.margin-top--none {
+  margin-top: 0;
+}
+
+.margin-right--small {
+  margin-right: 0.75rem;
+}
+
+// section classes
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  nav {
+    margin: 6rem 0 3.5rem 0;
+  }
+}
+
+#articles {
+  li {
+    border-bottom: 1px solid black;
+    padding: 1.5rem 0;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
+}
+
+footer {
+  background: #f4f4f4;
+  margin-top: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+// section elements clases
+.section__title {
+  font-family: "Inria Sans", sans-serif;
+  display: inline-block;
+  border-bottom: 5px black solid;
+  margin-bottom: 2.5rem;
+}
+
+.hero__logo {
+  margin: 0;
+  line-height: 0.8;
+  font-size: 7rem;
+}
+
+.hero__logo__subtitle {
+  margin: 1rem 0;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.footer__logo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 0.8;
+}
 
 .grid {
   display: grid;
@@ -204,42 +228,8 @@ nav {
   }
 }
 
-#articles {
-  --vertical-padding: 3.5rem;
-  // background: #f4f4f4;
-
-  li {
-    border-bottom: 1px solid black;
-    padding: 1.5rem 0;
-    &:first-child {
-      padding-top: 0;
-    }
-  }
-
-  ul {
-    // max-height: 300px;
-    // overflow-y: scroll;
-  }
-
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0.25rem;
-  }
-}
-
 .font-secondary {
   font-family: "Inria Sans", sans-serif;
-}
-
-footer {
-  background: #f4f4f4;
-  margin-top: 7rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.margin-top--none {
-  margin-top: 0;
 }
 
 .slider {
@@ -280,10 +270,6 @@ footer {
   }
 }
 
-.margin-right--small {
-  margin-right: 0.75rem;
-}
-
 .wa-btn {
   border-radius: 100px;
   font-weight: 400;
@@ -307,14 +293,6 @@ footer {
   }
 }
 
-.gap--2 {
-  gap: 2.5rem;
-}
-
-.gap--4 {
-  gap: 4.5rem;
-}
-
 @media (max-width: 800px) {
   .flex-container:not(.keep-direction) {
     flex-direction: column;
@@ -324,12 +302,11 @@ footer {
       margin-right: 0;
     }
   }
+
   .grid {
     grid-template-columns: 1fr;
   }
-  .font-size--hero {
-    font-size: 4.5rem;
-  }
+
   nav {
     display: flex;
     flex-direction: column;
@@ -342,10 +319,31 @@ footer {
       text-align: center;
     }
   }
+
   #hero {
     align-items: start;
     nav {
       margin: 3.5rem 0;
     }
   }
+
+  .hero__logo {
+    font-size: 4.5rem;
+  }
 }
+
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     color: black;
+//     background-color: #ffffff;
+//   }
+//   a {
+//     color: black;
+//   }
+//   // a:hover {
+//   //   color: #747bff;
+//   // }
+//   // button {
+//   //   background-color: #f9f9f9;
+//   // }
+// }
