@@ -92,6 +92,19 @@ nav {
   a:hover {
     opacity: 0.75;
   }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    a {
+      margin-right: 0.2rem;
+    }
+    p {
+      text-align: center;
+    }
+  }
 }
 
 // section classes
@@ -102,6 +115,10 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  align-items: center;
+  nav {
+    margin: 6rem 0 3.5rem 0;
+  }
 }
 
 #hero {
@@ -110,6 +127,13 @@ nav {
   align-items: center;
   nav {
     margin: 6rem 0 3.5rem 0;
+  }
+
+  @media (max-width: 800px) {
+    align-items: start;
+    nav {
+      margin: 3.5rem 0;
+    }
   }
 }
 
@@ -277,6 +301,14 @@ footer {
   }
 }
 
+.gap-h--small {
+  @media (max-width: 800px) {
+    * {
+      margin-right: 0;
+    }
+  }
+}
+
 // Slider
 .slider {
   width: 100%;
@@ -316,7 +348,6 @@ footer {
   }
 }
 
-
 @media (max-width: 800px) {
   .flex-container:not(.keep-direction) {
     flex-direction: column;
@@ -351,3 +382,4 @@ footer {
     font-size: 4.5rem;
   }
 }
+
